@@ -3,7 +3,6 @@ import {ArrowLeft, Home, Search, Notifications, Email} from '../../styles/Icons'
 
 
 export const Container = styled.div`
-z-index:2;
 display:flex;
 flex-direction:column;
 
@@ -16,6 +15,7 @@ width:min(601px, 100%);
 `;
 
 export const Header = styled.div`
+z-index:2;
 position:sticky;
 top:0;
 background:var(--primaria);
