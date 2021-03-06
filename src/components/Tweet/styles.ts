@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, {css} from 'styled-components';
 
 import { Chat, Favorite, Search } from '../../styles/Icons'
 
@@ -68,52 +68,65 @@ white-space:nowrap;
 > strong, span {
     white-space:nowrap;
     text-overflow:ellipsis;
+    overflow:hidden;
 }
 `;
 
 export const Dot = styled.div`
-
+background:var(--gray);
+width:2px;
+height:2px;
+margin:0 10px;
 `;
 
-export const Description = styled.div`
-
+export const Description = styled.p`
+    font-size:14px;
+    margin-top:4px;
 `;
 
 export const ImageContent = styled.div`
+margin:12px;
+width:100%;
+height:min(285px, max(175px, 41vw));
 
+background: var(--outline);
+border-radius:14px;
+
+cursor:pointer;
+&:hover{
+    opacity:0.7;}
 `;
 
 export const Icon = styled.div`
+display: flex;
+align-items: center;
+justify-content: space-between;
+flex-wrap: wrap;
+
 
 `;
 
 export const Status = styled.div`
-
+display:flex;
+align-items:center;
 `;
 
-export const ComentIcon = styled(Chat)`
-width:16px;
-height:16px;
+const iconCSS = css`
+width:19px;
+height:19px;
+`
 
-margin-left:35px;
-margin-right:9px;
-> path{
-    fill:var(--gray);
-}
+export const ComentIcon = styled(Chat)`
+${iconCSS}
+
 `;
 
 export const RetweetIcon = styled(Favorite)`
-width:16px;
-height:16px;
+${iconCSS}
 
-margin-left:35px;
-margin-right:9px;
 `;
 
 export const LikeIcon = styled(Search)`
-width:16px;
-height:16px;
+${iconCSS}
 
-margin-left:35px;
-margin-right:9px;
 `;

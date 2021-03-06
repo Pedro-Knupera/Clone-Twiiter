@@ -33,6 +33,7 @@ const Tweet: React.FC = ()=> {
                         <Dot/>
                         <time>04/03/2021</time>
                     </Header>
+                    
 
                     <Description>Metade Do projeto!!</Description>
 
@@ -42,16 +43,12 @@ const Tweet: React.FC = ()=> {
                         <Status>
                             <ComentIcon/>
                             18
-                        </Status>
-                    </Icon>
-                    <Icon>
-                        <Status>
+
+
+                    
+                        
                             <RetweetIcon/>
                             2
-                        </Status>
-                    </Icon>
-                    <Icon>
-                        <Status>
                             <LikeIcon/>
                             46
                         </Status>
